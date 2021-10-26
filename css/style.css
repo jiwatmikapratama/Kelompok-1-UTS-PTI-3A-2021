@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header CSS */
+.header {
+  color: #fff;
+  display: flex;
+  background-color: #111;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  width: 100px;
+  height: 100px;
+}
+
+.header ul {
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+  line-height: 40px;
+}
+
+.header ul li {
+  list-style: none;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header ul li a:hover {
+  color: #111;
+  background-color: #fff;
+}
+
+/* END Header CSS */
+
+/* Home CSS */
+.home {
+  display: flex;
+  align-items: center;
+  padding: 2% 3%;
+}
+
+.home .left-content h1 {
+  font-weight: bold;
+}
+
+.home .right-content{
+    margin-left: 2%;
+}
+
+.home .right-content img {
+  width: 600px;
+  height: 600px;
+}
+/* END Home CSS */
+
+/* Sejarah */
+.sejarah {
+  display: flex;
+  align-items: center;
+  padding: 2% 3%;
+}
+
+.sejarah .left-content img {
+  width: 800px;
+  height: 700px;
+}
+
+.sejarah .right-content{
+    margin-left: 2%;
+}
+/* END Sejarah */
+
+/* Kegiatan */
+.kegiatan {
+  padding: 1%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30%;
+}
+
+.kegiatan .kotak {
+    width: 300px;
+    height: 300px;
+}
+
+.kegiatan .gambar img {
+  width: 300px;
+  height: 300px;
+}
+
+.kegiatan .caption {
+    text-align: center;
+}
+/* END Kegiatan */
+
+/* Footer */
+footer {
+  background-color: #111;
+  padding: 1%;
+  color: #fff;
+  text-align: center;
+}
+/* END Footer */
