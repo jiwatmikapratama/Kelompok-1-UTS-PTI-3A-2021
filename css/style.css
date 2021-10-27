@@ -96,6 +96,7 @@ body {
 .kegiatan .kotak {
     width: 300px;
     height: 300px;
+    margin: 5%;
 }
 
 .kegiatan .gambar img {
@@ -116,3 +117,79 @@ footer {
   text-align: center;
 }
 /* END Footer */
+
+/* Responsive Breakpoint */
+/* 1100px Breakpoint */
+/* Home */
+
+/* END Home */
+/* Sejarah */
+@media (max-width: 1100px){
+  .sejarah {
+    display: flex;
+    align-items: center;
+    padding: 2% 3%;
+    flex-direction: column;
+  }
+/* END Sejarah Breakpoint */
+/* End 1100px Breakpoint */
+
+/* 830 Breakpoint */
+/* Home */
+.home .right-content img{
+  width: 400px;
+  height: 400px;
+}
+
+/* Home */
+.home {
+  flex-direction: column;
+}
+
+.home .left-content {
+  order: 2;
+}
+
+.home .right-content {
+  order: 1;
+}
+/* END Home */
+/* END Home */
+/* Sejarah Breakpoint */
+@media (max-width: 830px){
+    .sejarah .left-content img {
+      width: 400px;
+      height: 300px;
+  }
+}
+/* END Sejarah */
+/* END 830 Breakpont */
+
+/* 450 Breakpoint */
+/* Kegiatan */
+@media (max-width: 450px){
+  .kegiatan .kotak {
+    width: 300px;
+    height: 300px;
+    margin: 10%;
+}
+/* END Kegiatan */
+/* END 450 Breakpoint */
+/* 400 Breakpoint */
+/* Sejarah */
+@media (max-width: 400px){
+  .sejarah .left-content img {
+    width: 300px;
+    height: 200px;
+  }
+}
+/* END Sejarah */
+
+/* Home */
+.home .right-content img {
+  width: 200px;
+  height: 200px;
+}
+/*  END Home*/
+/* END 400 Breakpoint */
+/* END Responsive Breakpoint */
