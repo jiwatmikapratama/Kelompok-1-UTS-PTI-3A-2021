@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,6 +12,69 @@ body {
 
 /* Header CSS */
 .header {
+  background-color: #111;
+}
+.header .navbar img {
+  width: 90px;
+  height: 90px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+/* Hamburger Menu CSS */
+/* Important */
+.hamburger {
+  display: none;
+  background-color: #fff;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+/* END Important */
+/* END Hamburger Menu  */
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+
+/*.header {
   color: #fff;
   display: flex;
   background-color: #111;
@@ -43,7 +107,7 @@ body {
   color: #111;
   background-color: #fff;
 }
-
+*/
 /* END Header CSS */
 
 /* Home CSS */
@@ -119,10 +183,52 @@ footer {
 /* END Footer */
 
 /* Responsive Breakpoint */
-/* 1100px Breakpoint */
-/* Home */
+/* 768 Breakpoint */
+@media only screen and (max-width: 768px) {
+  /* Important */
+  .nav-menu {
+    position: fixed;
+    left: -100%; /* Bisa Diubah-ubah */
+    top: 5rem;
+    flex-direction: column;
+    background-color: #111;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
 
-/* END Home */
+  .nav-menu.active {
+    left: 0; /* Bisa Diubah-ubah sesuaikan dengan di nav menu*/
+  }
+  /* END Important */
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  /* Hamburger Menu Responsive */
+  /* Important */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+/* END 768 Breakpoint */
+/* 1100px Breakpoint */
 /* Sejarah */
 @media (max-width: 1100px){
   .sejarah {
@@ -153,7 +259,6 @@ footer {
 .home .right-content {
   order: 1;
 }
-/* END Home */
 /* END Home */
 /* Sejarah Breakpoint */
 @media (max-width: 830px){
@@ -203,4 +308,6 @@ footer {
 }
 /*  END Home*/
 /* END 400 Breakpoint */
+
+
 /* END Responsive Breakpoint */
