@@ -190,6 +190,10 @@ footer {
   width: 200px;
   height: 200px;
 }
+
+.home {
+  margin-bottom: 40%;
+}
 /*  END Home*/
 /* END 400 Breakpoint */
 /* END Responsive Breakpoint */
