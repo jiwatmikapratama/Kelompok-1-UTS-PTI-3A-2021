@@ -185,6 +185,13 @@ footer {
 }
 /* END Sejarah */
 
+/* Kegiatan */
+.kegiatan .kotak {
+  
+  margin: 20%;
+}
+/* END Kegiatan */
+
 /* Home */
 .home .right-content img {
   width: 200px;
